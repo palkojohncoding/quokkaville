@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 README file
 
 Welcome To Quokkaville!
@@ -11,7 +10,6 @@ Create a character - the Town Guide
 Create a character - The Gallery Guide
 Figure out how to make an opaque background with the image of town stretched over the entire page.
 Newspaper Company - The Daily Smile
-=======
 README file
 
 Welcome To Quokkaville!
@@ -24,4 +22,3 @@ Create a character - the Town Guide
 Create a character - The Gallery Guide
 Figure out how to make an opaque background with the image of town stretched over the entire page.
 Newspaper Company - The Daily Smile
->>>>>>> a5485181adb1fdba8e25876cb2a4062071393a97
