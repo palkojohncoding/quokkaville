@@ -147,3 +147,15 @@ body {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+.sasha-qcquokka {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: justify;
+    }
+#sasha-qcquokka {
+    float: left;
+    margin-right: 15px;
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
