@@ -73,25 +73,20 @@
     border-radius: 5px;
 }
 
-.nav {
-    grid-area: nav;
-    background-color: transparent;
-    padding: 15px;
-}
+
 .main {
     grid-area: main;
-    padding: 15px;
+    padding: 50px 0px;
     font-size: 20px;
-    text-align: center;
-    line-height: 1.6;
+    line-height: 1.4;
     background-color: var(--header-footer-color); /* Slightly transparent background */
     margin-bottom: 30px;
+    align-items: center;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
-.sidebar {
-    grid-area: sidebar;
-    background-color: transparent;
-    padding: 15px;
-}
+
 .footer {
     grid-area: footer;
     background-color: #4B19A7;
@@ -111,16 +106,16 @@
         "header header header"
         "main main main"
         "footer footer footer";
-    grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: auto 1fr auto;
     height: 100vh;
-    gap: 10px;
+    gap: 0px;
 }
-body, html {
-    margin: 0;
-    padding: 30px;;
+body {
+    padding: 10px;
+    margin-bottom: 50px;;
     height: 100%;
-    font-family: arial rounded mt bold, sans-serif;
+    text-align: center;
+    font-family: arial rounded mt bold, sans-serif;  
 }
 .description {
     font-size: 18px;
@@ -163,12 +158,6 @@ body, html {
     height: auto;
     border-radius: 10px;
     scroll-margin-top: 25vh;
-}
-body {
-  background-image: url('images/quokkavile_town.png');
-  background-size: cover;      /* Scales image to cover the entire background */
-  background-position: center; /* Centers the image */
-  background-repeat: no-repeat;/* Prevents tiling */
 }
 #town {
     width: 75%;
