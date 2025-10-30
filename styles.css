@@ -47,7 +47,7 @@
     justify-self: start;
     height: 80px;
     margin-right:  1rem;
-    margin-left: 5rem;
+    margin-left: 1rem;
 } 
 
 .nav-links {
@@ -144,10 +144,13 @@ body, html {
 #mayor-signature {
     width: 150px;
     height: auto;
-    margin-top: 10px;
     border-radius: 10px;
-    float-left: center;
+    display: block;
 }
+.signature {
+    text-align: left;
+}
+
 .peddles {
     font-size: 18px;
     margin-bottom: 20px;
