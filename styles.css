@@ -5,167 +5,25 @@
     --text-color: #333333;
     --header-footer-color: #ffffff;
 }
-
-
-.navbar {
-    grid-area: header;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-items: center;
-    background-color: var(--primary-color);
-    color: white;
-    font-size: 10px;
-    font-family: arial rounded mt bold;
-    font-weight: bold;
-    text-align: center;
-    width: 100%;
-    padding: 0rem 0; 
-}
-.navbar #combination-logo {
-    vertical-align: middle;
-    justify-self: start;
-    height: 80px;
-    margin-right:  1rem;
-    margin-left: 5rem;
-} 
-
-.nav-links {
-    justify-self: end;
-    margin-right: 2rem;
-    display: flex; /* use flexbox for horizontal layout */
-    align-items: center;
+/* Phones (portrait) */
+@media (max-width: 480px) {
+  /* styles for small phones */
 }
 
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 25px;
-    display: inline-block; /* display links inline */
-    margin-right: 1rem;
-    list-style-type: none; 
-    padding: 8px 12px;
-}
-.nav-links a:hover {
-    background-color: var(--header-footer-color);
-    color: var(--primary-color);
-    border-radius: 5px;
+/* Phones (landscape) and small tablets */
+@media (max-width: 768px) {
+  /* styles for larger phones or small tablets */
 }
 
-.nav {
-    grid-area: nav;
-    background-color: transparent;
-    padding: 15px;
-}
-.main {
-    grid-area: main;
-    padding: 15px;
-    font-size: 20px;
-    text-align: center;
-    line-height: 1.6;
-    background-color: var(--header-footer-color); /* Slightly transparent background */
-    margin-bottom: 30px;
-}
-.sidebar {
-    grid-area: sidebar;
-    background-color: transparent;
-    padding: 15px;
-}
-.footer {
-    grid-area: footer;
-    background-color: #4B19A7;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    width: 100%;
-    display: grid;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-
-}
-.holy-grail {
-    display: grid;
-    grid-template-areas:
-        "header header header"
-        "nav main sidebar"
-        "footer footer footer";
-    grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: auto 1fr auto;
-    height: 100vh;
-    gap: 10px;
-}
-body, html {
-    margin: 0;
-    padding: 30px;;
-    height: 100%;
-    font-family: arial rounded mt bold, sans-serif;
-}
-.description {
-    font-size: 18px;
-    margin-bottom: 20px;
-    text-align: justify;}
-
-.mayor {
-    font-size: 18px;
-    margin-bottom: 20px;
-    text-align: justify;
-    }
-
-#mayor {
-    float: left;
-    margin-right: 15px;
-    width: 200px;
-    height: auto;
-    border-radius: 10px;
-}
-.peddles {
-    font-size: 18px;
-    margin-bottom: 20px;
-    text-align: justify;
-    }
-#peddles {
-    float: right;
-    margin-left: 15px;
-    width: 200px;
-    height: auto;
-    border-radius: 10px;
-}
-body {
-  background-image: url('images/quokkavile_town.png');
-  background-size: cover;      /* Scales image to cover the entire background */
-  background-position: center; /* Centers the image */
-  background-repeat: no-repeat;/* Prevents tiling */
-}
-#town {
-    width: 75%;
-    height: auto;
-    border-radius: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-.sasha-qcquokka {
-    font-size: 18px;
-    margin-bottom: 20px;
-    text-align: justify;
-    }
-#sasha-qcquokka {
-    float: left;
-    margin-right: 15px;
-    width: 200px;
-    height: auto;
-    border-radius: 10px;
-:root {
-    --primary-color: #4B19A7;
-    --secondary-color: #ffffff;
-    --tertiary-color: #f0b5f0;
-    --text-color: #333333;
-    --header-footer-color: #ffffff;
+/* Tablets and small laptops */
+@media (max-width: 1024px) {
+  /* adjust layout, font sizes, etc. */
 }
 
+/* Desktops */
+@media (min-width: 1025px) {
+  /* your default or large-screen styles */
+}
 
 .navbar {
     grid-area: header;
@@ -281,6 +139,14 @@ body, html {
     width: 200px;
     height: auto;
     border-radius: 10px;
+    scroll-margin-top: 25vh;
+}
+#mayor-signature {
+    width: 150px;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    float-left: center;
 }
 .peddles {
     font-size: 18px;
@@ -293,6 +159,7 @@ body, html {
     width: 200px;
     height: auto;
     border-radius: 10px;
+    scroll-margin-top: 25vh;
 }
 body {
   background-image: url('images/quokkavile_town.png');
@@ -307,16 +174,85 @@ body {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-.sasha-qcquokka {
+.sasha-mcquokka {
     font-size: 18px;
     margin-bottom: 20px;
     text-align: justify;
     }
-#sasha-qcquokka {
+#sasha-mcquokka {
+    float: left;
+    margin-right: 15px;
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    scroll-margin-top: 25vh;
+}
+.wesley-webster {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: justify;
+    }
+#wesley-webster {
+    float: right;
+    margin-left: 15px;
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+.nina-newshound {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: justify;
+    }
+#nina-newshound {
     float: left;
     margin-right: 15px;
     width: 200px;
     height: auto;
     border-radius: 10px;
 }
+#quincys-games {
+    background-color: maroon;
+    color: white;
+
 }
+#quincys-games a {
+    color: yellow;
+    text-decoration: none;
+}
+#quincys-games a:hover {
+    text-decoration: underline;
+}
+#peddles-bike-shop {
+    background-color: purple;
+    color: white;
+}
+#peddles-bike-shop a {
+    color: yellow;
+    text-decoration: none;
+}
+#peddles-bike-shop a:hover {
+    text-decoration: underline;
+}
+#wesleys-coding-projects {
+    background-color: blue;
+    color: white;
+}
+#wesleys-coding-projects a {
+    color: yellow;
+    text-decoration: none;
+}
+#wesleys-coding-projects a:hover {
+    text-decoration: underline;
+}
+#sashas-art-gallery {
+    background-color: deeppink;
+    color: lavender;
+}
+#sashas-art-gallery a {
+    color: purple;
+    text-decoration: none;
+}
+#sashas-art-gallery a:hover {
+    text-decoration: underline;
+}       
