@@ -109,7 +109,7 @@
     display: grid;
     grid-template-areas:
         "header header header"
-        "nav main sidebar"
+        "main main main"
         "footer footer footer";
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: auto 1fr auto;
