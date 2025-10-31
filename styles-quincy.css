@@ -1,0 +1,111 @@
+:root {
+    --primary-color: maroon;
+    --secondary-color: black;
+    --tertiary-color: white;
+    --text-color: #333333;
+    --header-footer-color: #ffffff;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: var(--primary-color);
+  color: var(--tertiary-color);
+  text-align: center;
+}
+
+nav {
+  background: var(--secondary-color);
+  color: white;
+  padding: 0rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none
+}
+
+#combination-logo {
+    height: 60px;
+}
+.menu {
+  display: none;
+  flex-direction: column;
+  background: var(--secondary-color);
+}
+
+.menu a {
+  color: white;
+  padding: 0.5rem;
+  text-decoration: none;
+  border-top: 1px solid #444;
+}
+
+.menu a:hover {
+    background: var(--primary-color);
+}
+
+.hamburger {
+    font-size: 1.5rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: white;
+    padding: 0.5rem;  /* Add padding for larger touch target */
+    transition: opacity 0.2s ease;  /* Smooth hover effect */
+}
+
+.hamburger:hover {
+    opacity: 0.8;  /* Subtle hover effect */
+}
+
+/* Improve accessibility */
+.hamburger:focus {
+    outline: 2px solid white;
+    outline-offset: 2px;
+}
+
+#nav-menu {
+  text-align: center;
+  top: 60px;  /* Matches the height of #combination-logo */
+}
+
+#return {
+    color: yellow;
+    text-decoration: none;
+}
+
+@media (min-width: 600px) {
+  .hamburger {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .menu a {
+    border: none;
+  }
+}
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    flex-direction: column;
+    background-color: #333;
+    width: 150px;;
+    text-align: center;
+    padding: 0;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+}

@@ -5,26 +5,130 @@
     --text-color: #333333;
     --header-footer-color: #ffffff;
 }
-/* Phones (portrait) */
-@media (max-width: 480px) {
-  /* styles for small phones */
+body {
+    padding: 10px;
+    margin-bottom: 50px;;
+    height: 100%;
+    text-align: center;
+    font-family: arial rounded mt bold, sans-serif;  
 }
 
-/* Phones (landscape) and small tablets */
-@media (max-width: 768px) {
-  /* styles for larger phones or small tablets */
+nav {
+    background: var(--primary-color);
+    color: white;
+    padding: 0.1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /* Make the nav fixed */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+    width: 100%; /* Ensure it spans the full width */
+    z-index: 1000; /* Ensure it stays above other content */
 }
 
-/* Tablets and small laptops */
-@media (max-width: 1024px) {
-  /* adjust layout, font sizes, etc. */
+#combination-logo {
+    height: 4px;
 }
 
-/* Desktops */
-@media (min-width: 1025px) {
-  /* your default or large-screen styles */
+.menu {
+  display: none;
+  gap: 0.25rem;
+  background-color: var(--primary-color);
+  color: var(--header-footer-color);
+  padding-left: 20px;
+  
 }
 
+.menu a {
+    color: white;
+    padding: 0.25rem 0.25rem;
+    text-decoration: none;
+    display: flex; /* Change to flex for horizontal alignment */
+    justify-content: center; /* Center align items horizontally */
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+
+}
+
+.menu a:hover {
+    color: white;
+    padding: 0.25rem 0.25rem;
+    margin: 0;
+    border: 1px solid white;
+}
+
+#nav-menu {
+    text-align: center;
+    top: 80px;
+    right: 10px;
+}
+
+.hamburger {
+    font-size: 1.5rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: white;
+    position: relative; /* Add position relative */
+    right: 20px; /* Move 20px from the right edge */
+    padding: 0.5rem;  /* Add padding for larger touch target */
+    transition: opacity 0.2s ease;  /* Smooth hover effect */
+}
+
+.hamburger:hover {
+    opacity: 0.8;  /* Subtle hover effect */
+}
+
+/* Improve accessibility */
+.hamburger:focus {
+    outline: 2px solid white;
+    outline-offset: 2px;
+}
+
+#nav-menu {
+    text-align: center;
+    top: 80px;
+}
+
+@media (min-width: 600px) {
+    .hamburger {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .menu a {
+        border: none;
+    }
+}
+
+@media (max-width: 76800px) {
+  .hamburger {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    width: 150px;
+    text-align: center;
+    padding: 0;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+}
 .navbar {
     grid-area: header;
     position: fixed;
@@ -42,7 +146,7 @@
     width: 100%;
     padding: 0rem 0; 
 }
-.navbar #combination-logo {
+#combination-logo {
     vertical-align: middle;
     justify-self: start;
     height: 80px;
@@ -110,13 +214,7 @@
     height: 100vh;
     gap: 0px;
 }
-body {
-    padding: 10px;
-    margin-bottom: 50px;;
-    height: 100%;
-    text-align: center;
-    font-family: arial rounded mt bold, sans-serif;  
-}
+
 .description {
     font-size: 18px;
     margin-bottom: 20px;
@@ -260,4 +358,5 @@ body {
 }
 #sashas-art-gallery a:hover {
     text-decoration: underline;
-}       
+}
+/* Quincy McQuokka - Mayor of Quokkaville */
