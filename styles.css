@@ -13,7 +13,7 @@ body {
     font-family: arial rounded mt bold, sans-serif;  
 }
 
-nav {
+#navbar {
     background: var(--primary-color);
     color: white;
     padding: 0.1rem;
@@ -34,12 +34,12 @@ nav {
 }
 
 .menu {
-  display: none;
-  gap: 0.25rem;
-  background-color: var(--primary-color);
-  color: var(--header-footer-color);
-  padding-left: 20px;
-  
+    display: none;
+    gap: 0.25rem;
+    background-color: var(--primary-color);
+    color: var(--header-footer-color);
+    padding-left: 20px;
+    width: 200px; /* Increased width from 150px (in media query) to 200px */
 }
 
 .menu a {
@@ -123,7 +123,7 @@ nav {
     right: 0;
     flex-direction: column;
     background-color: mediumpurple;
-    width: 150px;
+    width: 250px;
     text-align: center;
     padding: 0;
   }
@@ -177,16 +177,7 @@ nav {
     left: 0;
 
 }
-.holy-grail {
-    display: grid;
-    grid-template-areas:
-        "header header header"
-        "main main main"
-        "footer footer footer";
-    grid-template-rows: auto 1fr auto;
-    height: 100vh;
-    gap: 0px;
-}
+
 
 .description {
     font-size: 18px;
@@ -231,11 +222,22 @@ nav {
     scroll-margin-top: 25vh;
 }
 #town {
-    width: 75%;
-    height: auto;
+    max-width: 75%;
+    width: 100%;
+    height: 200px;
     border-radius: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 20px auto;
+    overflow: hidden; /* ensure overflow is clipped */
+    display: block;
+}
+
+/* If #town is an <img> itself, the img rules below crop while preserving aspect ratio */
+#town img,
+#town {
+    width: 100%;
+    object-fit: cover;    /* crop to fill */
+    object-position: center;
+    display: block;
 }
 .sasha-mcquokka {
     font-size: 18px;
@@ -287,16 +289,15 @@ nav {
     height: auto;
     border-radius: 10px;
 }
-#quincys-games {
+.quincys_games {
     background-color: maroon;
     color: white;
-
 }
-#quincys-games a {
+.quincys_games a {
     color: yellow;
     text-decoration: none;
 }
-#quincys-games a:hover {
+.quincys_games a:hover {
     text-decoration: underline;
 }
 #peddles-bike-shop {
@@ -311,25 +312,25 @@ nav {
     text-decoration: underline;
 }
 #wesleys-coding-projects {
+.wesleys_coding_projects {
     background-color: blue;
     color: white;
 }
-#wesleys-coding-projects a {
+.wesleys_coding_projects a {
     color: yellow;
     text-decoration: none;
 }
-#wesleys-coding-projects a:hover {
+.wesleys_coding_projects a:hover {
     text-decoration: underline;
 }
-#sashas-art-gallery {
+.sashas_art_gallery {
     background-color: deeppink;
     color: lavender;
 }
-#sashas-art-gallery a {
+.sashas_art_gallery a {
     color: purple;
     text-decoration: none;
 }
-#sashas-art-gallery a:hover {
+.sashas_art_gallery a:hover {
     text-decoration: underline;
 }
-/* Quincy McQuokka - Mayor of Quokkaville */
