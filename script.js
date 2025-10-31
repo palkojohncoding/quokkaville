@@ -5,4 +5,10 @@ document.addEventListener('DOMContentLoaded', function() {
     hamburger.addEventListener('click', function() {
         menu.classList.toggle('active');
     });
+
+    document.addEventListener('click', function(event) {
+        if (!hamburger.contains(event.target) && !menu.contains(event.target)) {
+            menu.classList.remove('active');
+        }
+    });
 });
