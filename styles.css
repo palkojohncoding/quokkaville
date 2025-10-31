@@ -153,11 +153,11 @@ body {
 
 .main {
     grid-area: main;
-    padding: 50px 0px;
+    padding: 50px 10px;
     font-size: 20px;
     line-height: 1.4;
     background-color: var(--header-footer-color); /* Slightly transparent background */
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     align-items: center;
     max-width: 700px;
     margin-left: auto;
@@ -178,7 +178,13 @@ body {
 
 }
 
-
+#news-sign {
+    width: 550px;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto 20px auto;
+}
 .description {
     font-size: 18px;
     margin-bottom: 20px;
