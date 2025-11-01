@@ -218,6 +218,15 @@ hr {
     text-align: left;
 }
 
+/* Daily Smile Image Styles */
+.daily-smile {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: auto auto;
+
+
 /* Resident Section Styles */
 .residents-main p:nth-of-type(even) img {
     float: left;
