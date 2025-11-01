@@ -199,7 +199,7 @@ hr {
 .residents-main p:nth-of-type(even) img {
     float: left;
     margin-right: 15px;
-    width: 200px;
+    width: 150px;
     height: auto;
     border-radius: 10px;
     scroll-margin-top: 25vh;
@@ -208,7 +208,7 @@ hr {
 .residents-main p:nth-of-type(odd) img {
     float: right;
     margin-left: 15px;
-    width: 200px;
+    width: 150px;
     height: auto;
     border-radius: 10px;
     scroll-margin-top: 25vh;
