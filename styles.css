@@ -9,11 +9,46 @@ body {
     padding: 0px;
     margin-bottom: 50px;
     height: 100%;
-    text-align: center;
+    text-align: justify;
     font-family: arial rounded mt bold, sans-serif;  
 }
 
-#navbar {
+main {
+    grid-area: main;
+    padding: 50px 10px;
+    font-size: 20px;
+    line-height: 1.4;
+    background-color: var(--header-footer-color); /* Slightly transparent background */
+    margin-bottom: 10px;
+    align-items: center;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
+
+.purple, .date {
+    color: var(--primary-color);
+    font-size: 1rem;
+}
+
+hr {
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+#index_footer { /* footer styles found in index_footer.html */
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+
+}
+
+#navbar { /* navbar styles found in index_header.html */
     background: var(--primary-color);
     color: white;
     padding: 0.1rem;
@@ -28,12 +63,12 @@ body {
     z-index: 1000; /* Ensure it stays above other content */
 }
 
-#combination-logo {
+#combination-logo-purple { /* Logo styles found in index_header.html */
     height: 50px;
     margin-left: 20px;
 }
 
-.menu {
+.menu { /* Menu link styles found in index_header.html */
     display: none;
     gap: 0.25rem;
     background-color: var(--primary-color);
@@ -42,7 +77,7 @@ body {
     width: 200px; /* Increased width from 150px (in media query) to 200px */
 }
 
-.menu a {
+.menu a { /* Menu link styles found in index_header.html */
     color: white;
     padding: 0.25rem 0.25rem;
     text-decoration: none;
@@ -55,7 +90,7 @@ body {
 
 }
 
-.menu a:hover {
+.menu a:hover { /* Menu link styles found in index_header.html */
     color: white;
     padding: 0.25rem 0.25rem;
     margin: 0;
@@ -63,13 +98,15 @@ body {
     padding: 10px;
 }
 
-#nav-menu {
+#nav-menu { /* nav-menu for hamburger menu found in index_header.html */
     text-align: center;
     top: 0px; /* Adjust this value to align with the bottom of the navbar */
     right: 10px;
+        top: 57px;
+    animation: slideIn 0.3s ease-out;
 }
 
-.hamburger {
+.hamburger { /* hamburger menu found in index_header.html */
     font-size: 1.5rem;
     cursor: pointer;
     background: none;
@@ -81,20 +118,14 @@ body {
     transition: opacity 0.2s ease;  /* Smooth hover effect */
 }
 
-.hamburger:hover {
+.hamburger:hover { /* hamburger menu found in index_header.html */
     opacity: 0.8;  /* Subtle hover effect */
 }
 
 /* Improve accessibility */
-.hamburger:focus {
+.hamburger:focus { /* hamburger menu found in index_header.html */
     outline: 2px solid white;
     outline-offset: 2px;
-}
-
-#nav-menu {
-    text-align: center;
-    top: 57px;
-    animation: slideIn 0.3s ease-out;
 }
 
 @keyframes slideIn {
@@ -143,77 +174,17 @@ body {
   }
 }
 
-
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 25px;
-    display: inline-block; /* display links inline */
-    margin-right: 1rem;
-    list-style-type: none; 
-    padding: 8px 12px;
-}
-.nav-links a:hover {
-    background-color: var(--header-footer-color);
-    color: var(--primary-color);
-    border-radius: 5px;
-}
-
-
-.main {
-    grid-area: main;
-    padding: 50px 10px;
-    font-size: 20px;
-    line-height: 1.4;
-    background-color: var(--header-footer-color); /* Slightly transparent background */
-    margin-bottom: 10px;
-    align-items: center;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.footer {
-    grid-area: footer;
-    background-color: #4B19A7;
-    color: white;
-    text-align: center;
-    padding: 5px;
-    width: 100%;
-    display: grid;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-
-}
-
-#news-sign {
-    width: 550px;
-    height: auto;
+/* Top of Body Image Styles */
+#town {
+    width: 400px;
+    height: 300px;;
+    overflow: hidden;
     border-radius: 10px;
     display: block;
     margin: 0 auto 20px auto;
 }
-.description {
-    font-size: 18px;
-    margin-bottom: 20px;
-    text-align: justify;}
 
-.mayor {
-    font-size: 18px;
-    margin-bottom: 20px;
-    text-align: justify;
-    }
-
-#mayor {
-    float: left;
-    margin-right: 15px;
-    width: 200px;
-    height: auto;
-    border-radius: 10px;
-    scroll-margin-top: 25vh;
-}
+/* Signature Styles */
 #mayor-signature, #nina-signature {
     width: 150px;
     height: auto;
@@ -224,56 +195,17 @@ body {
     text-align: left;
 }
 
-.peddles {
-    font-size: 18px;
-    margin-bottom: 20px;
-    text-align: justify;
-    }
-#peddles {
-    float: right;
-    margin-left: 15px;
+/* Resident Section Styles */
+.residents-main p:nth-of-type(even) img {
+    float: left;
+    margin-right: 15px;
     width: 200px;
     height: auto;
     border-radius: 10px;
     scroll-margin-top: 25vh;
-}
-#town {
-    max-width: 75%;
-    width: 100%;
-    height: 200px;
-    border-radius: 10px;
-    margin: 20px auto;
-    overflow: hidden; /* ensure overflow is clipped */
-    display: block;
 }
 
-/* If #town is an <img> itself, the img rules below crop while preserving aspect ratio */
-#town img,
-#town {
-    width: 100%;
-    object-fit: cover;    /* crop to fill */
-    object-position: center;
-    display: block;
-}
-.sasha-mcquokka {
-    font-size: 18px;
-    margin-bottom: 20px;
-    text-align: justify;
-    }
-#sasha-mcquokka {
-    float: left;
-    margin-right: 15px;
-    width: 200px;
-    height: auto;
-    border-radius: 10px;
-    scroll-margin-top: 25vh;
-}
-.rosie-mcquokka {
-    font-size: 18px;
-    margin-bottom: 20px;
-    text-align: justify;
-    }
-#rosie-mcquokka {
+.residents-main p:nth-of-type(odd) img {
     float: right;
     margin-left: 15px;
     width: 200px;
@@ -281,30 +213,13 @@ body {
     border-radius: 10px;
     scroll-margin-top: 25vh;
 }
-.wesley-webster {
-    font-size: 18px;
-    margin-bottom: 20px;
-    text-align: justify;
-    }
-#wesley-webster {
-    float: right;
-    margin-left: 15px;
-    width: 200px;
-    height: auto;
-    border-radius: 10px;
+
+.resident-link {
+    color: var(--primary-color);
+    text-align: center;
+
 }
-.nina-newshound {
-    font-size: 18px;
-    margin-bottom: 20px;
-    text-align: justify;
-    }
-#nina-newshound {
-    float: left;
-    margin-right: 15px;
-    width: 200px;
-    height: auto;
-    border-radius: 10px;
-}
+    /* Individual Resident Webpage Colors */
 .quincys_games {
     background-color: maroon;
     color: white;
