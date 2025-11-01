@@ -5,9 +5,12 @@
     --text-color: #333333;
     --header-footer-color: #ffffff;
 }
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    padding: 0px;
-    margin-bottom: 50px;
+    padding: 50px 0 10px 0;
     height: 100%;
     text-align: justify;
     font-family: arial rounded mt bold, sans-serif;  
@@ -15,7 +18,7 @@ body {
 
 main {
     grid-area: main;
-    padding: 50px 10px;
+    padding: 10px 10px;
     font-size: 20px;
     line-height: 1.4;
     background-color: var(--header-footer-color); /* Slightly transparent background */
@@ -30,7 +33,7 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
-.purple, .date {
+.purple, .date { /* purple text style for article date entry */
     color: var(--primary-color);
     font-size: 1rem;
 }
@@ -38,6 +41,21 @@ h1, h2, h3, h4, h5, h6 {
 #purple-text {
     color: var(--primary-color);
     display: inline;
+}
+
+.bottom, .top {
+    text-align: right;
+    font-size: 0.8rem;
+
+    color: var(--primary-color);
+}
+
+#top {
+    scroll-margin-top: 25vh;
+}
+
+#nina, #webby {
+    scroll-margin-top: 25vh;
 }
 
 hr {
