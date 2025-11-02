@@ -37,8 +37,11 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
-.purple, .date { /* purple text style for article date entry */
+.purple { /* purple text style for article date entry */
     color: var(--primary-color);
+}
+
+.date {
     font-size: 1rem; /* slightly smaller font size for dates */
 }
 
@@ -52,6 +55,11 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 0.8rem;
 
     color: var(--primary-color);
+}
+
+.no-decor { /* link style without underline */
+    text-decoration: underline;
+    color: black;
 }
 
 #top { /* top anchor scroll margin */
