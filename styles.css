@@ -178,18 +178,9 @@ hr { /* horizontal rule styles */
     }
 }
 
-@media (min-width: 600px) {
-    .hamburger {
-        display: none;
-    }
-
-    .menu {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .menu a {
-        border: none;
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
     }
 }
 
