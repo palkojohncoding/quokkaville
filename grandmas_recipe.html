@@ -4,17 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grandma's Cabbage Rolls</title>
-    <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="logo.png">
+    <style>
+        body {
+            background-color:bisque
+        }
+
+        main {
+            background-color:aliceblue;
+            border: 4px solid black;
+}
+
+        .container {
+            background-color:white;
+            padding: 80px;
+        }
+
+        @media (max-width: 600px) {
+    main {
+        width: 100%;
+    }
+}
+    </style>
 </head>
-<body>
-    <div id="navbar"></div>
+<body style="font-family: Courier New">
+    <div style="font-family: arial rounded mt bold, sans-serif;" id="navbar"></div>
         <main class="main">
+            <div class="container">
             <a id="top"></a>
             <h1>Grandma's Cabbage Rolls Recipe</h1>
-            <hr>
             <p>Discover the heartwarming taste of Quokkaville with Grandma Quokka's cherished cabbage rolls recipe. Perfect for family gatherings or a cozy meal, these rolls are filled with love and tradition.</p>
-            <hr>
             <h2>Ingredients:</h2>
             <ul>
                 <li>1 large head of cabbage</li>
@@ -29,7 +48,6 @@
                 <li>1 tbsp Worcestershire sauce</li>
                 <li>Salt and pepper to taste</li>
             </ul>
-            <hr>
             <h2>Instructions:</h2>
             <ol>
                 <li>Preheat your oven to 350°F (175°C).</li>
@@ -41,11 +59,16 @@
                 <li>Cover the dish with aluminum foil and bake for 1 hour. Remove the foil and bake for an additional 15 minutes to allow the sauce to thicken slightly.</li>
                 <li>Let the cabbage rolls cool for a few minutes before serving. Enjoy!</li>
             </ol>
+            </div>
+        </main>
+<main>
+    <div class="container">
             <img class="images" id="cabbage-rolls" src="grandmas_recipe.png" alt="Grandma's Cabbage Rolls Image" loading="lazy">
             <figcaption>Photo: Grandma and her delicious homemade cabbage rolls made with love.<br>Photo credit: Rosie McQuokka</figcaption>
-            <hr>
-            <p class="top"><a href="residents.html#grandma">Back to Grandma's Resident Profile</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#top">Back to Top</a></p>
-        </main>
+    </div>
+</main>
+
+                    <p class="top" style="text-align: center;"><a href="residents.html#grandma">Back to Grandma's Resident Profile</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#top">Back to Top</a></p>
     <div id="index_footer"></div>
   <script src="load-layout.js"></script>
   <script src="script.js"></script>

@@ -5,6 +5,7 @@
     --text-color: #333333;
     --header-footer-color: #ffffff;
 }
+
 html {
     scroll-behavior: smooth;
 }
